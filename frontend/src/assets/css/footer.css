@@ -1,0 +1,50 @@
+.footer-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.main_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main_footer .col {
+  margin: 0 20px !important;
+  padding: 15px !important;
+}
+.footer_col img {
+  width: 42px;
+  height: 42px;
+}
+.footer_m {
+  padding: 25px 0 !important;
+  position: relative;
+  top: 85px;
+}
+.Contact_about {
+  padding: 30px 0 !important;
+}
+.Contact_about a {
+  text-decoration: none;
+  font-family: "Charlie Display", sans-serif;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.main_footer p {
+  font-size: 11px;
+  font-family: "Charlie Display", sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}

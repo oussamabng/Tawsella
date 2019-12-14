@@ -1,0 +1,425 @@
+@import url(//db.onlinewebfonts.com/c/a4b0c7481bf5f3e12ae73efaed581108?family=Azo+Sans);
+@font-face {
+  font-family: "AzoSans";
+  src: url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.eot");
+  src: url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.svg#Azo Sans")
+      format("svg");
+}
+@font-face {
+  font-family: "CaviarDreams";
+  src: local("CaviarDreams"), url("../fonts/CaviarDreams.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa"), url("../fonts/Comfortaa-Regular.ttf") format("ttf");
+}
+.getting_started {
+  height: 540px;
+  width: 100%;
+  padding: 5rem !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  background-image: linear-gradient(
+    64deg,
+    #845ec2 1%,
+    #2c73d2 36%,
+    #0081cf 47%,
+    #0081cf 56%,
+    #0089ba 66%,
+    #008e9b 85%,
+    #008f7a 96%
+  );
+}
+.getting_started .row {
+  margin: auto !important;
+  padding: auto !important;
+}
+.main_landing {
+  margin: 85px 0 0 !important;
+  background: #f3f3f3;
+}
+.gett_start {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.gett_start h1 {
+  font-family: "Charlie Display", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.7;
+  text-align: left;
+  color: #ffffff;
+}
+.gett_start p {
+  font-family: Comfortaa;
+  font-size: 22px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.getting_started-btn {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.bott {
+  margin-top: 50px !important;
+  padding-top: 30px !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.button_signup_learn_right {
+  border-radius: 187px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.29);
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  padding: 1rem 2rem !important;
+  font-family: AzoSans;
+  font-size: 22px;
+  font-weight: 300 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.06px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button_signup_learn {
+  border-radius: 187px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.29);
+  background-color: #dbd1d1c2;
+  color: black;
+  border: none;
+  padding: 1rem 2rem !important;
+  font-family: AzoSans;
+  font-size: 22px;
+  font-weight: 300 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.06px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.icon_bott {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  position: relative;
+}
+.icon_bott img {
+  position: absolute;
+  top: 0;
+  right: 14%;
+  width: 80px;
+  height: 80px;
+}
+.middle_man {
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+}
+.getting_started .row {
+  min-height: 100%;
+}
+.middle_man img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.end_man {
+  display: flex;
+  flex: 1;
+  padding: 0 50px !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.end_man img {
+  width: 60%;
+  height: 100%;
+}
+.middle_icon {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 35px !important;
+  padding-left: 0 !important;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+._left {
+  position: absolute;
+  right: 0;
+}
+.col_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+._right {
+  position: absolute;
+  top: 10%;
+}
+._right img {
+  width: 100px;
+  height: 100px;
+}
+.logo_icon {
+  background: white;
+  border-radius: 12px 0px 0px 12px;
+  width: 150.5px;
+  height: 80px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.36);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.logo_icon img {
+  margin-top: 15px !important;
+  margin-left: 5px !important;
+  width: 150px;
+  height: 50px;
+}
+._why {
+  background: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.32);
+}
+.container_why {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px !important;
+  padding-bottom: 0 !important ;
+}
+.why_row1 {
+  padding: 70px 0 !important;
+}
+.why_row2 {
+  padding-bottom: 70px !important;
+}
+.why_title h3 {
+  margin-bottom: 0.5rem;
+  font-family: "Charlie Display", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.1875rem;
+  color: #000000;
+}
+
+.why_items {
+  border-radius: 49.5px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.27);
+  background-color: #ffffff;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin: 0 70px !important;
+}
+.why_items img {
+  width: 90px;
+  height: 90px;
+}
+.title_why {
+  border-bottom: 1px solid #6a6666;
+}
+.title_why p {
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6a6666;
+  padding-bottom: 5px !important;
+  overflow: visible;
+}
+.why_p {
+  font-family: AzoSans;
+  font-size: 14px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: grey;
+  padding: 15px !important;
+  text-align: center !important;
+}
+._how {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+._how_part1 {
+  background-color: #ffffff;
+  padding: 40px 0 !important;
+}
+._how_part2 {
+  background-color: #ffffff;
+  padding: 40px 0 !important;
+  padding-top: 0 !important;
+}
+.spacer_section {
+  height: 40px;
+}
+.container_how {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.how_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+}
+
+.col_how {
+  padding: 0 15px !important;
+}
+.img_how img {
+  width: 350px;
+  height: 350px;
+}
+.how_details img {
+  width: 30%;
+  height: 80%;
+}
+.how_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  align-items: flex-start;
+}
+.how_details p {
+  font-family: Comfortaa;
+  font-size: 22px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-top: 10px !important;
+}
+.spacer_how {
+  border-bottom: 1px #6a6666 solid;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 20px 0 !important;
+}
+.col_sp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_how_send img {
+  width: 256px;
+  height: 256px;
+}
+.img_how_send {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.GetStart_bottom {
+  background: white;
+  display: flex;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.29);
+}
+.ButtonGettingStarted {
+  z-index: 100;
+  background: transparent;
+  position: relative;
+  border: none;
+  padding: 35px !important;
+}
+.ButtonGettingStarted button {
+  border-radius: 187px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.29);
+  background-color: #6c4d74;
+  color: white;
+  padding: 1rem 2rem !important;
+  font-family: AzoSans;
+  font-size: 22px;
+  font-weight: 200 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.06px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  border-bottom-style: solid;
+  border-color: #9a78a2;
+  border-bottom-width: 6px;
+}
+.ButtonGettingStarted button:hover {
+  border-bottom-width: 3px;
+}
+.container_why .pad {
+  padding: 0 !important;
+}
+.popover > .button_signup_learn:hover {
+  background-color: #000000 !important;
+  color: white !important;
+}
+.button_signup_learn_right:hover {
+  background-color: #000000;
+  color: white;
+}
+.last_row {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.last_row ::before,
+.last_row ::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
+}

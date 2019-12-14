@@ -1,0 +1,129 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@import url(//db.onlinewebfonts.com/c/a4b0c7481bf5f3e12ae73efaed581108?family=Azo+Sans);
+@font-face {
+  font-family: "AzoSans";
+  src: url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.eot");
+  src: url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a4b0c7481bf5f3e12ae73efaed581108.svg#Azo Sans")
+      format("svg");
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa"), url("../fonts/Comfortaa-Regular.ttf") format("ttf");
+}
+.main_header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 85px;
+  z-index: 200;
+}
+.main_navbar {
+  background-color: #fff;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 10;
+  height: 100%;
+  padding: 0.4rem 2rem 0.4rem 0.4rem !important;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main_logo {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  margin-top: 15px !important;
+  padding-left: 30px !important;
+  margin: 0 !important;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.main_logo img {
+  height: 100%;
+  padding: 0.4rem;
+  position: absolute;
+  top: 15%;
+  margin-left: 2rem;
+}
+.spacer {
+  display: block;
+  flex-grow: 1;
+}
+
+.navbar_items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0rem !important;
+}
+.navbar_items li {
+  margin: 0 4rem !important;
+}
+.navbar_items li a {
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #6a6666;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.popover {
+  position: relative;
+  z-index: 100;
+  background: transparent;
+  border: none;
+}
+.button_signup {
+  border-radius: 187px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.29);
+  background-color: #2c73d2;
+  color: #fff !important;
+  border: none;
+  padding: 0.8rem 1.7rem !important;
+  font-family: AzoSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.06px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button_signup:hover {
+  background: #fff;
+  color: #2c73d2 !important;
+}
+.getting_started {
+  height: 540px;
+  width: 100%;
+  background-image: linear-gradient(
+    64deg,
+    #845ec2 1%,
+    #2c73d2 36%,
+    #0081cf 47%,
+    #0081cf 56%,
+    #0089ba 66%,
+    #008e9b 85%,
+    #008f7a 96%
+  );
+}
