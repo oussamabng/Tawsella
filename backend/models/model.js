@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const multer = require("multer");
 const testSchema = new mongoose.Schema({
-    name:String
-})
+  name: String
+});
 const UserSchema = new mongoose.Schema({
   username: {
     type: String,
@@ -23,15 +23,12 @@ const UserSchema = new mongoose.Schema({
     maxlength: 255,
     minlength: 5
   },
-  gender: {
-    type: String,
-    enum: ["Male", "Female"]
-  },
+
   birthday: {
     type: Date,
     default: Date.now()
   },
- 
+
   image: {
     type: Buffer,
     contentType: String
@@ -39,15 +36,10 @@ const UserSchema = new mongoose.Schema({
   phone: {
     type: String
   },
-  address: {
-    city: String,
-    wilaya: String,
-    zip: Number
-  },
-  ccp: {
-    type: Number,
-    required: [true, "ccp code is required"]
-  },
+
+  city: String,
+  zip: Number,
+
   is_driver: {
     type: Boolean,
     required: true

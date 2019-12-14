@@ -7,11 +7,43 @@ import "../assets/css/signup.css";
 import Man from "../assets/img/woman.png";
 import IconMan from "../assets/img/name_user_3716.png";
 import Password from "../assets/img/locked-padlock-rounded-black-tool-security-interface-symbol_icon-icons.com_54497.png";
+import axios from "axios";
 class Signup extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      username: "",
+      password1: "",
+      password2: "",
+      city: "",
+      zip: "",
+      phone: "",
+      fullname: ""
+    };
   }
+  register = () => {
+    if (this.state.password1 != this.state.password2) {
+      return alert("passwords are not the same");
+    } else {
+    }
+    const user = {
+      username: this.state.username,
+      password: this.state.password1,
+      city: this.state.city,
+      zip: this.state.zip,
+      phone: this.state.phone,
+      fullname: this.state.fullname
+    };
+    axios
+      .post(`https://localhost:8080/api/signup`, { user })
+      .then(res => {
+        window.localStorage.setItem("token", res.token);
+        window.location.href = "localhost:3000/test";
+      })
+      .catch(() => {
+        return alert("invalid inputs");
+      });
+  };
   render() {
     return (
       <>
@@ -27,11 +59,16 @@ class Signup extends Component {
                     <Col className="col_signup">
                       {" "}
                       <div className="input_signin">
-                        <input type="text" placeholder="full name" />
+                        <input
+                          value={this.state.fullname}
+                          type="text"
+                          placeholder="full name"
+                        />
                       </div>
                       <div className="split_">
                         <div className="input_signup">
                           <input
+                            value={this.state.city}
                             type="text"
                             name="city"
                             id="city"
@@ -40,6 +77,7 @@ class Signup extends Component {
                         </div>
                         <div className="input_signup">
                           <input
+                            value={this.state.zip}
                             type="text"
                             name="zip"
                             id="zip"
@@ -48,22 +86,38 @@ class Signup extends Component {
                         </div>
                       </div>
                       <div className="input_signin">
-                        <input type="password" placeholder="phone N°" />
+                        <input
+                          value={this.state.phone}
+                          type="phone"
+                          placeholder="phone N°"
+                        />
                       </div>
                     </Col>
                     <Col className="col_signup">
                       {" "}
                       <div className="input_signin">
                         <img src={IconMan} alt="logo" />
-                        <input type="text" placeholder="@username" />
+                        <input
+                          value={this.state.username}
+                          type="text"
+                          placeholder="@username"
+                        />
                       </div>
                       <div className="input_signin">
                         <img src={Password} alt="logo" />
-                        <input type="password" placeholder="password" />
+                        <input
+                          value={this.state.password1}
+                          type="password"
+                          placeholder="password"
+                        />
                       </div>
                       <div className="input_signin">
                         <img src={Password} alt="logo" />
-                        <input type="password" placeholder="confirm password" />
+                        <input
+                          value={this.state.password2}
+                          type="password"
+                          placeholder="confirm password"
+                        />
                       </div>
                     </Col>
                   </Row>
@@ -76,7 +130,12 @@ class Signup extends Component {
                 </Form>
                 <div className="signup_buttons">
                   <div className="popover_">
-                    <button className="button_signup_">sign up</button>
+                    <button
+                      className="button_signup_"
+                      onClick={this.register.bind(this)}
+                    >
+                      sign up
+                    </button>
                   </div>
                   <div className="doesnt_have">
                     <p>already have an account?</p>

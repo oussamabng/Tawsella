@@ -265,7 +265,7 @@
 }
 
 .main_add_delev {
-  height: 500px;
+  height: 600px;
   background-image: linear-gradient(
     41deg,
     #845ec2 0%,
@@ -376,7 +376,7 @@
 }
 
 .xxx {
-  padding: 15px 30px !important;
+  padding: 20px 30px !important;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45);
   border-radius: 50px;
   background-color: #47c8e2;
@@ -397,4 +397,37 @@
   font-weight: 100;
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
   cursor: pointer;
+}
+.bex {
+  justify-content: center !important;
+}
+textarea {
+  padding: 0 15px !important;
+  border: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.sss {
+  position: relative;
+}
+#jjaha {
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+#aza {
+  padding: 0 10px !important;
+  white-space: nowrap;
+}
+.weywey {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 65px 0 !important;
+}
+.yyy p {
+  color: #000000;
+  font-family: "Charlie Display", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
 }

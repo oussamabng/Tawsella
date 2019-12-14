@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
 const { User } = require("../models/model");
-var bcrypt = require('bcryptjs');
+var bcrypt = require("bcryptjs");
 const config = require("config");
 const Joi = require("joi");
 
@@ -28,14 +28,12 @@ router.post("/signup", async (req, res) => {
       .header("x-auth-token", token)
       .send(token);
   } catch (error) {
-    res.send('error')
+    res.send("error");
   }
- 
 });
 
-
 router.post("/login", async (req, res) => {
-  console.log("sss")
+  console.log("sss");
   const { error } = validateUser(req.body);
   if (error) {
     return res.status(400).send(error.details[0].message);

@@ -6,11 +6,36 @@ import "../assets/css/signin.css";
 import Man from "../assets/img/woman.png";
 import IconMan from "../assets/img/name_user_3716.png";
 import Password from "../assets/img/locked-padlock-rounded-black-tool-security-interface-symbol_icon-icons.com_54497.png";
+import axios from "axios";
 class Signin extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      username: "",
+      password: ""
+    };
   }
+  handlePassword = event => {
+    this.setState({ password: event.target.value });
+  };
+  handleChange = event => {
+    this.setState({ username: event.target.value });
+  };
+  login = () => {
+    const user = {
+      username: this.state.username,
+      password: this.state.password
+    };
+    axios
+      .post(`https://localhost:8080/api/login`, { user })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+      .catch(() => {
+        return alert("invalid inputs");
+      });
+  };
   render() {
     return (
       <>
@@ -24,11 +49,21 @@ class Signin extends Component {
                 <Form>
                   <div className="input_signin">
                     <img src={IconMan} alt="logo" />
-                    <input type="text" placeholder="@username" />
+                    <input
+                      value={this.state.username}
+                      type="text"
+                      placeholder="@username"
+                      onChange={this.handleChange}
+                    />
                   </div>
                   <div className="input_signin">
                     <img src={Password} alt="logo" />
-                    <input type="password" placeholder="password" />
+                    <input
+                      value={this.state.password}
+                      type="password"
+                      placeholder="password"
+                      onChange={this.handlePassword}
+                    />
                   </div>
                   <div className="forgot_div">
                     <a href="#" className="forgot_password">
@@ -38,7 +73,12 @@ class Signin extends Component {
                 </Form>
                 <div className="signin_buttons">
                   <div className="popover_">
-                    <button className="button_signup_">login</button>
+                    <button
+                      className="button_signup_"
+                      onClick={this.login.bind(this)}
+                    >
+                      login
+                    </button>
                   </div>
                   <div className="doesnt_have">
                     <p>doesn't have an account?</p>

@@ -458,34 +458,113 @@ class Sender extends Component {
               </Col>
             </Row>
             <Container className="cnt">
+              <Row className="toping">
+                <Col>
+                  <div className="input_signin yyy ml-2 mr-2">
+                    <p>from</p>
+                    <input
+                      value={this.state.username}
+                      type="text"
+                      placeholder="@username"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </Col>
+                <Col>
+                  {" "}
+                  <div className="input_signin yyy ml-2 mr-2">
+                    <p>date</p>
+                    <input
+                      value={this.state.username}
+                      type="date"
+                      placeholder="date"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </Col>
+                <Col>
+                  {" "}
+                  <div className="input_signin yyy ml-2 mr-2">
+                    <p>to</p>
+                    <input
+                      value={this.state.username}
+                      type="text"
+                      placeholder="city,wilaya"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </Col>
+              </Row>
               <Row>
                 <Col>
-                  <div className="from_city">
-                    <div className="input_signin_i">
-                      <p>from</p>
-                      <input type="text" placeholder="city,wilaya" />
+                  <div className="split_ bex">
+                    <div className="input_signup mr-5 ml-5">
+                      <input
+                        value={this.state.city}
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="pck type"
+                      />
                     </div>
-                    <div className="input_signin_">
-                      <p>date</p>
-                      <input id="uu" type="date" placeholder="ssss" />
+                    <div className="input_signup mr-5 ml-5">
+                      <input
+                        value={this.state.zip}
+                        type="text"
+                        name="zip"
+                        id="zip"
+                        placeholder="weight"
+                      />
+                    </div>
+                    <div className="input_signup mr-5 ml-5">
+                      <input
+                        value={this.state.zip}
+                        type="text"
+                        name="zip"
+                        id="zip"
+                        placeholder="height"
+                      />
+                    </div>
+                    <div className="input_signup mr-5 ml-5">
+                      <input
+                        value={this.state.zip}
+                        type="text"
+                        name="zip"
+                        id="zip"
+                        placeholder="width"
+                      />
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <div className="input_signin ml-2 mr-2">
+                    <textarea
+                      placeholder="description"
+                      rows="4"
+                      cols="50"
+                    ></textarea>
+                  </div>
+                </Col>
+                <Col>
+                  <div className="flex-dd">
+                    <div className="input_signup mr-5 ml-5">
+                      <input type="checkbox" name="" id="jjaha" />
+                      <p id="aza"> extra care</p>
+                    </div>
+
+                    <div className="input_signup mr-5 ml-5">
+                      <input type="checkbox" name="" id="jjaha" />
+                      <p id="aza"> VIP service</p>
                     </div>
                   </div>
                 </Col>
                 <Col>
-                  <div className="from_city">
-                    <div className="input_signin_i">
-                      <p>to</p>
-                      <input type="text" placeholder="city,wilaya" />
-                    </div>
-                    <div className="input_signin_i">
-                      <p>to</p>
-                      <input type="text" placeholder="city,wilaya" />
-                    </div>
-                    <div className="popover okioki">
-                      <button className="button_signup_learn_home xxx">
-                        confirm
-                      </button>
-                    </div>
+                  <div className="popover weywey">
+                    <button className="button_signup_learn_home xxx">
+                      confirm
+                    </button>
                   </div>
                 </Col>
               </Row>
