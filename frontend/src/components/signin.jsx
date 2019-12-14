@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Form, Col, Row, Container } from "react-bootstrap";
 import NavbarClient from "../components/navbar";
 import FooterClient from "../components/footer";
+import NAvbarFooter from "../components/navbar";
 import "../assets/css/signin.css";
 import Man from "../assets/img/woman.png";
 import IconMan from "../assets/img/name_user_3716.png";
@@ -26,19 +27,19 @@ class Signin extends Component {
       username: this.state.username,
       password: this.state.password
     };
-    axios
-      .post(`https://localhost:8080/api/login`, { user })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      })
-      .catch(() => {
-        return alert("invalid inputs");
-      });
+    if (user.username != "") {
+      if (user.password != "") {
+        window.location.href = "http://localhost:3000/delev";
+      } else {
+        return alert("invalid input");
+      }
+      return alert("invalid input");
+    }
   };
   render() {
     return (
       <>
+        <NAvbarFooter />
         <main className="main-signin">
           <div className="image_signin">
             <img src={Man} alt="man" />

@@ -21,6 +21,13 @@ class Signup extends Component {
       fullname: ""
     };
   }
+  onChangeHandler = evt => {
+    const value = evt.target.value;
+    this.setState({
+      ...this.state,
+      [evt.target.name]: value
+    });
+  };
   register = () => {
     if (this.state.password1 != this.state.password2) {
       return alert("passwords are not the same");
@@ -47,6 +54,7 @@ class Signup extends Component {
   render() {
     return (
       <>
+        <NavbarClient />
         <main className="main-signin">
           <div className="image_signin">
             <img src={Man} alt="man" />
@@ -62,7 +70,9 @@ class Signup extends Component {
                         <input
                           value={this.state.fullname}
                           type="text"
+                          name="fullname"
                           placeholder="full name"
+                          onChange={this.onChangeHandler.bind(this)}
                         />
                       </div>
                       <div className="split_">
@@ -73,6 +83,7 @@ class Signup extends Component {
                             name="city"
                             id="city"
                             placeholder="city"
+                            onChange={this.onChangeHandler.bind(this)}
                           />
                         </div>
                         <div className="input_signup">
@@ -82,6 +93,7 @@ class Signup extends Component {
                             name="zip"
                             id="zip"
                             placeholder="zip"
+                            onChange={this.onChangeHandler.bind(this)}
                           />
                         </div>
                       </div>
@@ -89,7 +101,9 @@ class Signup extends Component {
                         <input
                           value={this.state.phone}
                           type="phone"
+                          name="phone"
                           placeholder="phone N°"
+                          onChange={this.onChangeHandler.bind(this)}
                         />
                       </div>
                     </Col>
@@ -101,6 +115,8 @@ class Signup extends Component {
                           value={this.state.username}
                           type="text"
                           placeholder="@username"
+                          name="username"
+                          onChange={this.onChangeHandler.bind(this)}
                         />
                       </div>
                       <div className="input_signin">
@@ -108,7 +124,9 @@ class Signup extends Component {
                         <input
                           value={this.state.password1}
                           type="password"
+                          name="password1"
                           placeholder="password"
+                          onChange={this.onChangeHandler.bind(this)}
                         />
                       </div>
                       <div className="input_signin">
@@ -116,7 +134,9 @@ class Signup extends Component {
                         <input
                           value={this.state.password2}
                           type="password"
+                          name="password2"
                           placeholder="confirm password"
+                          onChange={this.onChangeHandler.bind(this)}
                         />
                       </div>
                     </Col>

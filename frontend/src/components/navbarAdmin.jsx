@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Navbar, Nav, Row, Col } from "react-bootstrap";
 import "../assets/css/navbar.css";
 import Logo from "../assets/img/Groupe 31.png";
-class NavbarClient extends Component {
+class NavbarAdmin extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -18,11 +18,13 @@ class NavbarClient extends Component {
           <div className="test">
             <ul className="nav-links navbar_items">
               <li>
-                <a href="/" style={{ color: "#008e8b" }}>
-                  Home
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="" style={{ color: "#008e8b" }}>
+                  Your profil
                 </a>
               </li>
-
               <li>
                 <a href="">How does it work?</a>
               </li>
@@ -31,8 +33,8 @@ class NavbarClient extends Component {
               </li>
               <li>
                 <div className="popover">
-                  <a href="/signin" className="button_signup">
-                    Login
+                  <a href="/" className="button_signup">
+                    sign out
                   </a>
                 </div>
               </li>
@@ -43,4 +45,4 @@ class NavbarClient extends Component {
     );
   }
 }
-export default NavbarClient;
+export default NavbarAdmin;

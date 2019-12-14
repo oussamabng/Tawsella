@@ -23,6 +23,7 @@ class Landing extends Component {
   render() {
     return (
       <>
+        <NavbarClient />
         <main className="main_landing">
           <section className="getting_started">
             <Row>
@@ -40,9 +41,12 @@ class Landing extends Component {
                 <div className="bott">
                   <div className="getting_started-btn">
                     <div className="popover">
-                      <button className="button_signup_learn bg-white">
-                        Get started
-                      </button>
+                      <a href="/signin">
+                        {" "}
+                        <button className="button_signup_learn bg-white">
+                          Get started
+                        </button>
+                      </a>
                     </div>
                     <div className="popover ml-5">
                       <button
@@ -151,12 +155,13 @@ class Landing extends Component {
                     <p>
                       {" "}
                       if you want to get some extra cash during your trip to
-                      somewhere , you can be a Deliverer and take other's people
-                      stuff ,our website provide youthis service. by being a
-                      Deliverer you can post in our website the place you 'll go
-                      to and the time , and people who want to send their stuffs
-                      will contact you, and you will deliver it after you make
-                      deal and agree to our security terms.
+                      somewhere or be a full time deliverer, you can take
+                      other's people stuff, our website provide you this
+                      service. by being a Deliverer you can post in our website
+                      the place you'll go to and the time or just finding a user
+                      demand to deliver and take, people who want to send their
+                      stuffs will contact you, and make your delver as soon as
+                      you make deal and agree to our security terms.
                     </p>
                   </div>
                 </Col>
@@ -176,13 +181,13 @@ class Landing extends Component {
                     <img src={Sender} alt="lo" />
                     <p>
                       {" "}
-                      if you want to get some extra cash during your trip to
-                      somewhere , you can be a Deliverer and take other's people
-                      stuff ,our website provide youthis service. by being a
-                      Deliverer you can post in our website the place you 'll go
-                      to and the time , and people who want to send their stuffs
-                      will contact you, and you will deliver it after you make
-                      deal and agree to our security terms.
+                      have you got enough from delivery company and there high
+                      priceces and unfinishable problem you can send your stuff
+                      from today in a VIP trip with all care you want by the
+                      specification you chose along with the best deliverer we
+                      have if not find just make a demand that will be taking by
+                      one of our deliverer all that with the best prices ship
+                      your stuff now by only sign up in few steps
                     </p>
                   </div>
                 </Col>
@@ -198,7 +203,10 @@ class Landing extends Component {
             <Container fluid className="container_why">
               <Row className="last_row">
                 <div className="ButtonGettingStarted">
-                  <button>Get started</button>
+                  <a href="/signin">
+                    {" "}
+                    <button>Get started</button>
+                  </a>{" "}
                 </div>{" "}
               </Row>
             </Container>
