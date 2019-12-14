@@ -1,0 +1,269 @@
+.principal {
+  width: 100%;
+  position: relative;
+  top: 85px;
+  height: 100%;
+  background-image: linear-gradient(
+    64deg,
+    #845ec2 1%,
+    #2c73d2 36%,
+    #0081cf 47%,
+    #0081cf 56%,
+    #0089ba 66%,
+    #008e9b 85%,
+    #008f7a 96%
+  );
+  color: #ffffff;
+}
+.principal h1 {
+  margin-left: 30% !important;
+  margin-top: 8% !important;
+}
+.post {
+  font-size: 18.5px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.post p {
+  margin-left: 42% !important;
+  margin-top: 8% !important;
+}
+.button-tool p {
+  margin: 0 !important;
+  margin-top: 2% !important;
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+}
+.del-button {
+  margin-left: 35% !important;
+  margin-top: 1% !important;
+  width: 8%;
+  height: 55px;
+  color: #fff;
+  background-color: #47c8e2;
+  -webkit-border-radius: 95px;
+  -moz-border-radius: 95px;
+  border-radius: 95px;
+  color: #ffffff;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 1px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  border: solid #337fed 1px;
+  cursor: pointer;
+}
+.send-button {
+  margin-right: 5% !important;
+  margin-top: 1% !important;
+  width: 8%;
+  height: 55px;
+  color: #fff;
+  background-color: #36d4be;
+  -webkit-border-radius: 95px;
+  -moz-border-radius: 95px;
+  border-radius: 95px;
+  color: #ffffff;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 1px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  border: solid #337fed 1px;
+  cursor: pointer;
+}
+.big-button {
+  margin-left: 35%;
+  position: absolute;
+  margin-top: -4% !important;
+  margin-bottom: 7% !important;
+  width: 20%;
+  height: 125px;
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-border-radius: 95px;
+  -moz-border-radius: 95px;
+  border-radius: 95px;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 1px !important;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  border: solid #337fed 1px;
+  cursor: pointer;
+}
+.add-button {
+  margin-left: 90% !important;
+  margin-top: 1% !important;
+  width: 8%;
+  height: 45px;
+  color: #000;
+  background-color: #ffffff;
+  -webkit-border-radius: 95px;
+  -moz-border-radius: 95px;
+  border-radius: 95px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 1px !important;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  border: none;
+  cursor: pointer;
+}
+.re-button {
+  margin-left: 90% !important;
+  margin-top: 1% !important;
+  width: 8%;
+  height: 45px;
+  color: #000;
+  background-color: #ffffff;
+  -webkit-border-radius: 95px;
+  -moz-border-radius: 95px;
+  border-radius: 95px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 1px !important;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  border: none;
+  cursor: pointer;
+}
+.second {
+  background-color: #f6f6f6;
+  width: 60% !important;
+  padding: 50px 0px !important;
+}
+.second h2 {
+  margin-left: 29% !important;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #c5c5c5;
+  background-color: white;
+}
+.take-button {
+  margin: 25px 25px !important;
+  width: 10% !important;
+  height: 40px;
+  color: #fff;
+  background-color: #30ab85;
+  border-radius: 80px;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  font-weight: 100;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+}
+.vip-button {
+  margin: 25px 25px !important;
+  width: 10% !important;
+  height: 40px;
+  color: #fff;
+  background-color: #6e6d03;
+  border-radius: 80px;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  font-weight: 100;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+}
+.tr_table {
+  margin: 20px 0 !important;
+}
+.tr_table_x {
+  margin: 20px 0 !important;
+  background-color: #e8c4c4;
+}
+.tr_table_vip {
+  margin: 20px 0 !important;
+  background: #e0e777 !important;
+}
+.spacer_table {
+  height: 20px;
+  background: rgb(246, 246, 246);
+}
+.tooken-button {
+  margin: 25px 25px !important;
+  width: 10% !important;
+  height: 40px;
+  color: #fff;
+  background-color: #d85f5f;
+  border-radius: 80px;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  font-weight: 100;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+}
+.tttt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 20px;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > , /* hover current star */
+.rating:not(:checked) > label {
+  color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > input:checked , /* hover current star when changing rating */
+.rating > input:checked ,
+.rating > input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label {
+  color: #ffed85;
+}

@@ -101,7 +101,7 @@ class Landing extends Component {
                 </Col>
                 <Col md="4">
                   <div className="why_items">
-                    <img src={Img2} alt="img1" />
+                    <img src={Img3} alt="img1" />
                     <div className="title_why">
                       <p>Extra cash</p>
                     </div>
@@ -112,7 +112,7 @@ class Landing extends Component {
                 </Col>
                 <Col md="4">
                   <div className="why_items">
-                    <img src={Img3} alt="img1" />
+                    <img src={Img2} alt="img1" />
                     <div className="title_why">
                       <p>Delivery all time</p>
                     </div>
